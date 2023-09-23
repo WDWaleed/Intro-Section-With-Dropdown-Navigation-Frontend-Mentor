@@ -61,3 +61,19 @@
   border-radius: 0.75rem;
   padding: 0.1rem 0.75rem 0.4rem 0.75rem;
 }
+
+#features-dropdown li:nth-child(1)::before{
+  content: url("/images/icon-todo.svg");
+}
+
+#features-dropdown li:nth-child(2)::before{
+  content: url("/images/icon-calendar.svg");
+}
+
+#features-dropdown li:nth-child(3)::before{
+  content: url("/images/icon-reminders.svg");
+}
+
+#features-dropdown li:nth-child(4)::before{
+  content: url("/images/icon-planning.svg");
+}

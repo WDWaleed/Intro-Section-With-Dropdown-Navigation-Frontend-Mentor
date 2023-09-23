@@ -17,8 +17,10 @@ const Nav = () => {
       ></button>
       <div
         id="overlay"
-        className={`${navOpen ? "translate-x-0" : "-translate-x-full"} custom:hidden`}
-        onClick={()=>setNavOpen(false)}
+        className={`${
+          navOpen ? "translate-x-0" : "-translate-x-full"
+        } custom:hidden`}
+        onClick={() => setNavOpen(false)}
       ></div>
       <div
         id="nav-container"
@@ -38,7 +40,8 @@ const Nav = () => {
               <span
                 className={`${
                   featuresOpen ? "rotate-180" : "rotate-0"
-                } transition-transform ease-linear duration-100 w-[10px] h-[6px] mb-[1px] ml-2 content-[url(images/icon-arrow-down.svg)]`}
+                } transition-transform ease-linear duration-100 w-[10px] h-[6px] mb-[1px] ml-2`}
+                style={{ content: `url(images/icon-arrow-down.svg)` }}
               ></span>
               <ul
                 id="features-dropdown"
@@ -46,16 +49,16 @@ const Nav = () => {
                   featuresOpen ? "block" : "hidden"
                 } dropdown custom:absolute custom:py-4 custom:px-6 custom:w-max  custom:rounded-lg custom:mt-4`}
               >
-                <li className="mb-2 before:content-[url(images/icon-todo.svg)] before:mr-3 before:relative before:top-[2px]">
+                <li className="mb-2 before:mr-3 before:relative before:top-[2px]">
                   Todo List
                 </li>
-                <li className="mb-2 before:content-[url(images/icon-calendar.svg)] before:mr-3 before:relative before:top-[2px]">
+                <li className="mb-2  before:mr-3 before:relative before:top-[2px]">
                   Calendar
                 </li>
-                <li className="mb-2 before:content-[url(images/icon-reminders.svg)] before:mr-3 before:relative before:top-[2px]">
+                <li className="mb-2 before:mr-3 before:relative before:top-[2px]">
                   Reminders
                 </li>
-                <li className="mb-2 before:content-[url(images/icon-planning.svg)] before:mr-3 before:relative before:top-[2px]">
+                <li className="mb-2 before:mr-3 before:relative before:top-[2px]">
                   Planning
                 </li>
               </ul>
@@ -70,12 +73,15 @@ const Nav = () => {
               <span
                 className={`${
                   companyOpen ? "rotate-180" : "rotate-0"
-                } transition-transform ease-linear duration-100 w-[10px] h-[6px] mb-[1px] ml-2 content-[url(images/icon-arrow-down.svg)]`}
+                } transition-transform ease-linear duration-100 w-[10px] h-[6px] mb-[1px] ml-2`}
+                style={{content: `url(images/icon-arrow-down.svg)`}}
               ></span>
               <ul
                 className={` dropdown ${
                   companyOpen ? "block" : "hidden"
-                } dropdown custom:absolute custom:py-4 custom:px-6 custom:w-max  custom:rounded-lg custom:mt-4 ${featuresOpen ? "custom:left-16" : "custom:left-0"}`}
+                } dropdown custom:absolute custom:py-4 custom:px-6 custom:w-max  custom:rounded-lg custom:mt-4 ${
+                  featuresOpen ? "custom:left-16" : "custom:left-0"
+                }`}
               >
                 <li className="mb-2">History</li>
                 <li className="mb-2">Our Team</li>
