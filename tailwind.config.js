@@ -5,7 +5,15 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        hamburger: "url('images/icon-menu.svg')",
+        X: "url('images/icon-close-menu.svg')"
+      },
+      screens: {
+        custom: "750px"
+      }
+    },
   },
   plugins: [],
 }
