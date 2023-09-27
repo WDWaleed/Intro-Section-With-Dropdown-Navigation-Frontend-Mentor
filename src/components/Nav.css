@@ -1,4 +1,4 @@
-@media screen and (width < 750px) {
+@media screen and (width < 800px) {
   #nav-container {
     position: fixed;
     top: 0;
@@ -51,15 +51,14 @@
   }
 }
 
-@media screen and (width > 750px) {
+@media screen and (width > 800px) {
   .dropdown {
     box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.15);
   }
 }
 #buttons button:last-child {
-  border: 2px solid black;
   border-radius: 0.75rem;
-  padding: 0.1rem 0.75rem 0.4rem 0.75rem;
+  padding: 0.25rem 0.75rem 0.25rem 0.75rem;
 }
 
 #features-dropdown li:nth-child(1)::before{

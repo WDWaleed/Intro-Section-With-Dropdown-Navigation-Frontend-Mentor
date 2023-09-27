@@ -1,0 +1,22 @@
+@media screen and (width < 800px) {
+  #hero-image-container {
+    content: url("/images/image-hero-mobile.png");
+    width: 100%;
+  }
+
+
+}
+
+@media screen and (500px < width < 800px) {
+    #title {
+        font-size: 3rem;
+      }
+    
+}
+
+@media screen and (width > 800px) {
+  #hero-image-container {
+    content: url("/images/image-hero-desktop.png");
+    aspect-ratio: 960/1280;
+  }
+}

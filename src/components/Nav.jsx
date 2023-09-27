@@ -26,12 +26,12 @@ const Nav = () => {
         id="nav-container"
         className={`flex grow ${
           navOpen ? "translate-x-0" : "translate-x-full"
-        } justify-between custom:translate-x-0`}
+        } justify-between custom:translate-x-0 bg-white text-MediumGray`}
       >
         <nav id="mobile-nav">
-          <ul className="flex gap-4">
+          <ul className="flex gap-8">
             <li
-              className="relative hover:cursor-pointer"
+              className="relative hover:cursor-pointer hover:text-AlmostBlack"
               onClick={() => {
                 setFeaturesOpen(!featuresOpen);
               }}
@@ -40,7 +40,7 @@ const Nav = () => {
               <span
                 className={`${
                   featuresOpen ? "rotate-180" : "rotate-0"
-                } transition-transform ease-linear duration-100 w-[10px] h-[6px] mb-[1px] ml-2`}
+                } transition-transform ease-linear duration-100 w-[10px] h-[6px] mb-[3px] ml-2`}
                 style={{ content: `url(images/icon-arrow-down.svg)` }}
               ></span>
               <ul
@@ -49,16 +49,16 @@ const Nav = () => {
                   featuresOpen ? "block" : "hidden"
                 } dropdown custom:absolute custom:py-4 custom:px-6 custom:w-max  custom:rounded-lg custom:mt-4`}
               >
-                <li className="mb-2 before:mr-3 before:relative before:top-[2px]">
+                <li className="mb-2 before:mr-3 before:relative before:top-[1px] text-MediumGray">
                   Todo List
                 </li>
-                <li className="mb-2  before:mr-3 before:relative before:top-[2px]">
+                <li className="mb-2  before:mr-3 before:relative before:top-[1px] text-MediumGray">
                   Calendar
                 </li>
-                <li className="mb-2 before:mr-3 before:relative before:top-[2px]">
+                <li className="mb-2 before:mr-3 before:relative before:top-[1px] text-MediumGray">
                   Reminders
                 </li>
-                <li className="mb-2 before:mr-3 before:relative before:top-[2px]">
+                <li className="mb-2 before:mr-3 before:relative before:top-[1px] text-MediumGray">
                   Planning
                 </li>
               </ul>
@@ -67,13 +67,13 @@ const Nav = () => {
               onClick={() => {
                 setCompanyOpen(!companyOpen);
               }}
-              className="relative hover:cursor-pointer"
+              className="relative hover:cursor-pointer hover:text-AlmostBlack"
             >
               Company
               <span
                 className={`${
                   companyOpen ? "rotate-180" : "rotate-0"
-                } transition-transform ease-linear duration-100 w-[10px] h-[6px] mb-[1px] ml-2`}
+                } transition-transform ease-linear duration-100 w-[10px] h-[6px] mb-[3px] ml-2`}
                 style={{content: `url(images/icon-arrow-down.svg)`}}
               ></span>
               <ul
@@ -83,22 +83,22 @@ const Nav = () => {
                   featuresOpen ? "custom:left-16" : "custom:left-0"
                 }`}
               >
-                <li className="mb-2">History</li>
-                <li className="mb-2">Our Team</li>
-                <li className="mb-2">Blog</li>
+                <li className="mb-2 text-MediumGray">History</li>
+                <li className="mb-2 text-MediumGray">Our Team</li>
+                <li className="mb-2 text-MediumGray">Blog</li>
               </ul>
             </li>
-            <li>
+            <li className="hover:text-AlmostBlack">
               <a href="#">Careers</a>
             </li>
-            <li>
+            <li className="hover:text-AlmostBlack">
               <a href="#">About</a>
             </li>
           </ul>
         </nav>
         <div id="buttons">
-          <button className="mr-5">Login</button>
-          <button className="mr-5">Register</button>
+          <button className="mr-8 hover:text-AlmostBlack">Login</button>
+          <button className="mr-8 border-2 border-MediumGray hover:text-AlmostBlack hover:border-AlmostBlack">Register</button>
         </div>
       </div>
     </>
