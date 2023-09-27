@@ -8,6 +8,7 @@ const Nav = () => {
   return (
     <>
       <button
+        aria-label="Toggle navigation menu"
         className={`${
           navOpen ? "bg-X w-[26px] h-[26px]" : "bg-hamburger w-[32px] h-[18px]"
         } bg-no-repeat   absolute top-5 right-5 z-50 custom:hidden`}
@@ -74,7 +75,7 @@ const Nav = () => {
                 className={`${
                   companyOpen ? "rotate-180" : "rotate-0"
                 } transition-transform ease-linear duration-100 w-[10px] h-[6px] mb-[3px] ml-2`}
-                style={{content: `url(images/icon-arrow-down.svg)`}}
+                style={{ content: `url(images/icon-arrow-down.svg)` }}
               ></span>
               <ul
                 className={` dropdown ${
@@ -98,7 +99,9 @@ const Nav = () => {
         </nav>
         <div id="buttons">
           <button className="mr-8 hover:text-AlmostBlack">Login</button>
-          <button className="mr-8 border-2 border-MediumGray hover:text-AlmostBlack hover:border-AlmostBlack">Register</button>
+          <button className="mr-8 border-2 border-MediumGray hover:text-AlmostBlack hover:border-AlmostBlack">
+            Register
+          </button>
         </div>
       </div>
     </>
