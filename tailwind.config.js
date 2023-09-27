@@ -6,8 +6,6 @@ export default {
       backgroundImage: {
         hamburger: "url('/images/icon-menu.svg')",
         X: "url('/images/icon-close-menu.svg')",
-        HeroDesktop: "url('/images/image-hero-desktop.png')",
-        HeroMobile: "url('/images/image-hero-mobile.png')",
       },
       screens: {
         custom: "800px",

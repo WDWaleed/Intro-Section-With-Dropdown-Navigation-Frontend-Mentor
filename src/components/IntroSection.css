@@ -1,7 +1,8 @@
 @media screen and (width < 800px) {
   #hero-image-container {
-    content: url("/images/image-hero-mobile.png");
+    content: url("/images/image-hero-mobile.webp");
     width: 100%;
+    min-height: calc(100vw / 1.33);
   }
 
 
@@ -16,7 +17,7 @@
 
 @media screen and (width > 800px) {
   #hero-image-container {
-    content: url("/images/image-hero-desktop.png");
+    content: url("/images/image-hero-desktop.webp");
     aspect-ratio: 960/1280;
   }
 }
