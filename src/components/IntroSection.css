@@ -4,15 +4,12 @@
     width: 100%;
     min-height: calc(100vw / 1.33);
   }
-
-
 }
 
 @media screen and (500px < width < 800px) {
-    #title {
-        font-size: 3rem;
-      }
-    
+  #title {
+    font-size: 3rem;
+  }
 }
 
 @media screen and (width > 800px) {

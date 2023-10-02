@@ -46,7 +46,7 @@
     left: 0;
     width: calc(100% - 250px);
     background: black;
-    opacity: .6;
+    opacity: 0.6;
     transition: 0.3s transform ease-out;
   }
 }
@@ -61,18 +61,18 @@
   padding: 0.25rem 0.75rem 0.25rem 0.75rem;
 }
 
-#features-dropdown li:nth-child(1)::before{
+#features-dropdown li:nth-child(1)::before {
   content: url("/images/icon-todo.svg");
 }
 
-#features-dropdown li:nth-child(2)::before{
+#features-dropdown li:nth-child(2)::before {
   content: url("/images/icon-calendar.svg");
 }
 
-#features-dropdown li:nth-child(3)::before{
+#features-dropdown li:nth-child(3)::before {
   content: url("/images/icon-reminders.svg");
 }
 
-#features-dropdown li:nth-child(4)::before{
+#features-dropdown li:nth-child(4)::before {
   content: url("/images/icon-planning.svg");
 }

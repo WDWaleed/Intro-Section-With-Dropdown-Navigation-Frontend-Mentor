@@ -10,8 +10,8 @@ const Nav = () => {
       <button
         aria-label="Toggle navigation menu"
         className={`${
-          navOpen ? "bg-X w-[26px] h-[26px]" : "bg-hamburger w-[32px] h-[18px]"
-        } bg-no-repeat   absolute top-5 right-5 z-50 custom:hidden`}
+          navOpen ? "h-[26px] w-[26px] bg-X" : "h-[18px] w-[32px] bg-hamburger"
+        } absolute   right-5 top-5 z-50 bg-no-repeat custom:hidden`}
         onClick={() => {
           setNavOpen(!navOpen);
         }}
@@ -27,7 +27,7 @@ const Nav = () => {
         id="nav-container"
         className={`flex grow ${
           navOpen ? "translate-x-0" : "translate-x-full"
-        } justify-between custom:translate-x-0 bg-white text-MediumGray`}
+        } justify-between bg-white text-MediumGray custom:translate-x-0`}
       >
         <nav id="mobile-nav">
           <ul className="flex gap-8">
@@ -41,25 +41,25 @@ const Nav = () => {
               <span
                 className={`${
                   featuresOpen ? "rotate-180" : "rotate-0"
-                } transition-transform ease-linear duration-100 w-[10px] h-[6px] mb-[3px] ml-2`}
+                } mb-[3px] ml-2 h-[6px] w-[10px] transition-transform duration-100 ease-linear`}
                 style={{ content: `url(images/icon-arrow-down.svg)` }}
               ></span>
               <ul
                 id="features-dropdown"
                 className={`dropdown ${
                   featuresOpen ? "block" : "hidden"
-                } dropdown custom:absolute custom:py-4 custom:px-6 custom:w-max  custom:rounded-lg custom:mt-4`}
+                } dropdown custom:absolute custom:mt-4 custom:w-max custom:rounded-lg  custom:px-6 custom:py-4`}
               >
-                <li className="mb-2 before:mr-3 before:relative before:top-[1px] text-MediumGray">
+                <li className="mb-2 text-MediumGray before:relative before:top-[1px] before:mr-3">
                   Todo List
                 </li>
-                <li className="mb-2  before:mr-3 before:relative before:top-[1px] text-MediumGray">
+                <li className="mb-2  text-MediumGray before:relative before:top-[1px] before:mr-3">
                   Calendar
                 </li>
-                <li className="mb-2 before:mr-3 before:relative before:top-[1px] text-MediumGray">
+                <li className="mb-2 text-MediumGray before:relative before:top-[1px] before:mr-3">
                   Reminders
                 </li>
-                <li className="mb-2 before:mr-3 before:relative before:top-[1px] text-MediumGray">
+                <li className="mb-2 text-MediumGray before:relative before:top-[1px] before:mr-3">
                   Planning
                 </li>
               </ul>
@@ -74,13 +74,13 @@ const Nav = () => {
               <span
                 className={`${
                   companyOpen ? "rotate-180" : "rotate-0"
-                } transition-transform ease-linear duration-100 w-[10px] h-[6px] mb-[3px] ml-2`}
+                } mb-[3px] ml-2 h-[6px] w-[10px] transition-transform duration-100 ease-linear`}
                 style={{ content: `url(images/icon-arrow-down.svg)` }}
               ></span>
               <ul
                 className={` dropdown ${
                   companyOpen ? "block" : "hidden"
-                } dropdown custom:absolute custom:py-4 custom:px-6 custom:w-max  custom:rounded-lg custom:mt-4 ${
+                } dropdown custom:absolute custom:mt-4 custom:w-max custom:rounded-lg  custom:px-6 custom:py-4 ${
                   featuresOpen ? "custom:left-16" : "custom:left-0"
                 }`}
               >
@@ -99,7 +99,7 @@ const Nav = () => {
         </nav>
         <div id="buttons">
           <button className="mr-8 hover:text-AlmostBlack">Login</button>
-          <button className="mr-8 border-2 border-MediumGray hover:text-AlmostBlack hover:border-AlmostBlack">
+          <button className="mr-8 border-2 border-MediumGray hover:border-AlmostBlack hover:text-AlmostBlack">
             Register
           </button>
         </div>

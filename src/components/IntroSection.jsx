@@ -2,46 +2,46 @@ import "./IntroSection.css";
 
 const IntroSection = () => {
   return (
-    <main className=" flex flex-col custom:flex-row-reverse custom:justify-between custom:max-w-[1200px] custom:mx-auto custom:gap-4 custom:p-4 custom:mt-12 custom:h-[calc(100vh-150px)] w-full">
+    <main className=" flex w-full flex-col custom:mx-auto custom:mt-12 custom:h-[calc(100vh-150px)] custom:max-w-[1200px] custom:flex-row-reverse custom:justify-between custom:gap-4 custom:p-4">
       <div id="hero-image-container"></div>
       <div
         id="hero-content-container"
-        className="px-4 py-6 flex flex-col items-center text-center custom:items-start custom:justify-center custom:text-left custom:gap-8"
+        className="flex flex-col items-center px-4 py-6 text-center custom:items-start custom:justify-center custom:gap-8 custom:text-left"
       >
-        <h1 id="title" className="text-[2.2rem] custom:text-7xl font-bold">
+        <h1 id="title" className="text-[2.2rem] font-bold custom:text-7xl">
           Make remote work
         </h1>
-        <p className=" text-MediumGray text-[16px] custom:text-custom max-w-[405px]">
+        <p className=" max-w-[405px] text-[16px] text-MediumGray custom:text-custom">
           Get your team in sync, no matter your location. Streamline processes,
           create team rituals, and watch productivity soar.
         </p>
-        <button className="py-2 px-4 rounded-2xl bg-AlmostBlack text-AlmostWhite my-5 custom:my-0 hover:bg-transparent hover:text-AlmostBlack border border-AlmostBlack transition-colors ">
+        <button className="my-5 rounded-2xl border border-AlmostBlack bg-AlmostBlack px-4 py-2 text-AlmostWhite transition-colors hover:bg-transparent hover:text-AlmostBlack custom:my-0 ">
           Learn more
         </button>
 
         <div
           id="clients"
-          className="w-full flex justify-between gap-4 flex-wrap mt-10"
+          className="mt-10 flex w-full flex-wrap justify-between gap-4"
         >
           <img
             src="images/client-databiz.svg"
             alt="DataBiz"
-            className="w-[114px] h-[20px]"
+            className="h-[20px] w-[114px]"
           />
           <img
             src="images/client-audiophile.svg"
             alt="Audiophile"
-            className="w-[73px] h-[36px]"
+            className="h-[36px] w-[73px]"
           />
           <img
             src="images/client-meet.svg"
             alt="Meet"
-            className="w-[90px] h-[20px]"
+            className="h-[20px] w-[90px]"
           />
           <img
             src="images/client-maker.svg"
             alt="Maker"
-            className="w-[83px] h-[24px]"
+            className="h-[24px] w-[83px]"
           />
         </div>
       </div>
